@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --cor-padrao: #66dd49;
+    --fundo-secao: rgb(74, 18, 18);
+    --cor-barra: rgb(86, 57, 57);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor-padrao);
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+    background-repeat: cover;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1rem;
+    height: 100%;
+    margin: 1rem;
+}
+
+.left, .experiences, .education  {
+    background-color: var(--fundo-secao);
+    border-radius: 10px;
+    overflow: hidden;
+    background-image:
+        linear-gradient(
+            rgba(74, 18, 18, 0.9),
+            rgba(74, 18, 18, 0.9)
+        ),
+        url(../img/banana-pattern.jpg);
+}
+
+.experiences, .education {
+    padding: 10px;
+}
+
+.left-img {
+    position: relative;
+}
+
+.left-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.left-img h1 {
+    position: absolute;
+    bottom: 0;
+    font-family: "Figtree", sans-serif;
+}
+
+.info, .abilities, .languages {
+    padding: 1rem;
+    line-height: 20px;
+}
+
+.left {
+    box-shadow: 5px 5px 10px white;
+}
+
+.right {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date, i {
+    color: var(--cor-padrao);
+}
+
+ul {
+    list-style: none;
+}
+
+.progress {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    background-color: var(--cor-barra);
+    transition: 100s ease;
+    border-radius: 20px;
+}
+
+.bar {
+    border-radius: 20px;
+    height: 100%;
+    background-color: var(--cor-padrao);
+}
+
+.item-name {
+    font-weight: bolder;
+}
+
+p, h2, h3 {
+    color: white;
+}
+
+footer {
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--fundo-secao);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    flex-direction: column;
+      background-image:
+        linear-gradient(
+            rgba(74, 18, 18, 0.9),
+            rgba(74, 18, 18, 0.9)
+        ),
+        url(../img/banana-pattern.jpg);
+}
+
+span {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.links a {
+    margin: 10px;
+    font-family: "Figtree", sans-serif;
+}
+
+.links a:hover {
+    font-size: 1.1rem;
+    transition: 1s ease;
+}
