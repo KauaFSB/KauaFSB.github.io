@@ -60,6 +60,9 @@ main {
     position: absolute;
     bottom: 0;
     font-family: "Figtree", sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--fundo-secao);
+    color: var(--cor-padrao); 
 }
 
 .info, .abilities, .languages {
